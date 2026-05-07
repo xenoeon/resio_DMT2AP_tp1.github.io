@@ -1,9 +1,0 @@
-Carrera: Diseño Multimedial
-Materia: Maquetado y Desarrollo Web
-Cuatrimestre: segundo cuatrimestre
-Año: 2025
-Turno: mañana
-Comisión: AP
-Nombre alumno: Resio Elcarás, Mariano León
-
-Link: https://xenoeon.github.io/resio_dmm2ap_tp1.github.io
