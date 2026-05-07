@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@font-face {
+   font-family: oldenglishtext;
+   src: url(./fonts/oldenglishtextmt.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+ion-icon{
+    font-size: 40px;
+    color: black;
+}
+body{
+    background-color: rgb(245, 237, 220);
+    padding: 10px;
+}
+h1{
+    font-family: oldenglishtext;
+    text-align: center;
+    
+}
+h2 , h3{
+    font-family: "Crimson Text", serif;
+}
+p{
+    font-family: "Rubik", sans-serif;
+}
+#title{
+    border-bottom: 1px solid black;
+}
+.critics{
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#banner{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    picture{
+        display: block;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: 50% 12%;
+        display: block;
+    }
+}
+#content{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    h2{
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    h3{
+        margin-top: 5px;
+    }
+    p{
+        text-indent: .5em;
+    }
+}
+#plot img{
+    float: right;
+    margin: 0 0 5px 10px;
+}
+#context figure {
+    overflow: hidden;
+    height: 400px;
+}
+#context figure picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#context figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    display: block;
+}
+#characters{
+    margin-top: 10px;
+    h2{
+        border-bottom: 1px solid black;
+    }
+    ul{
+        padding-top: 10px;
+        display: grid;
+        gap: 25px 10px;
+    }
+    img{
+        float: left;
+    }
+    h3{
+        margin-bottom: 20px;
+    }
+    div{
+        height: 100%;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+footer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #social{
+        display: flex;
+        gap: 10px;
+    }
+}
+@media screen  and (min-width: 320px) and (max-width:768px){
+    h1{
+        font-size: 75px;
+    }
+    .critics{
+        display: none;
+    }
+    #banner{
+        height: 75px;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #plot img{
+        width: 125px;
+    }
+    #context figure{
+        height: 200px;
+    }
+    #characters{
+        ul{
+            grid-template-columns: auto;
+        }
+        img{
+            width: 150px;
+        }
+    }
+}
+@media screen  and (min-width: 769px) and (max-width:1200px){
+    h1{
+        font-size: 100px;
+    }
+    #title{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    .critics{
+        width: 150px;
+        height: 150px;
+    }
+    #banner{
+        height: 150px;
+    }
+    #content{
+        div{
+            width: calc(100% / 2);
+        }
+    }
+    #plot img{
+        width: 150px;
+    }
+    #context figure{
+            height: 150px;
+            width: 100%;
+    }
+    #characters{
+        ul{
+            grid-template-columns: auto auto;
+        }
+        img{
+            width: 100px;
+        }
+    }
+}
+@media screen  and (min-width: 1201px){
+    h1{
+        font-size: 150px;
+    }
+    #title{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    .critics{
+        width: 200px;
+        height: 200px;
+        font-size: 1.3em;
+    }
+    #banner{
+        height: 250px;
+    }
+    #plot img{
+        width: 200px;
+    }
+    #context figure{
+        height: 300px;
+    }
+    #characters{
+        ul{
+            grid-template-columns: auto auto auto auto;
+        }
+        img{
+            width: 125px;
+            height: 125px;
+        }
+    }
+}
